@@ -57,6 +57,8 @@ namespace ControleDeGastos.Data.Migrations
 
                     b.Property<int?>("CategoriaID");
 
+                    b.Property<int?>("ContaID");
+
                     b.Property<string>("Descricao");
 
                     b.Property<int?>("MesID");
@@ -66,6 +68,8 @@ namespace ControleDeGastos.Data.Migrations
                     b.HasKey("ID");
 
                     b.HasIndex("CategoriaID");
+
+                    b.HasIndex("ContaID");
 
                     b.HasIndex("MesID");
 
@@ -295,6 +299,10 @@ namespace ControleDeGastos.Data.Migrations
                     b.HasOne("ControleDeGastos.Models.Categoria", "Categoria")
                         .WithMany("Gastos")
                         .HasForeignKey("CategoriaID");
+
+                    b.HasOne("ControleDeGastos.Models.Conta", "Conta")
+                        .WithMany()
+                        .HasForeignKey("ContaID");
 
                     b.HasOne("ControleDeGastos.Models.Mes", "Mes")
                         .WithMany()

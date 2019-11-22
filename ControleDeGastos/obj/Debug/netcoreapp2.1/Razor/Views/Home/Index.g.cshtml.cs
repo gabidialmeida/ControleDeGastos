@@ -64,7 +64,7 @@ using ControleDeGastos.Models;
             WriteLiteral("\r\n<div>\r\n    <div style=\"padding-top: 36px;\">\r\n        Ações Rápidas\r\n    </div>\r\n\r\n    <hr />\r\n    <div class=\"card-columns\">\r\n        <div class=\"card\">\r\n            <div class=\"card-body\">\r\n                ");
             EndContext();
             BeginContext(254, 197, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "703b65344d38426ca57c9135a16a07cc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c2c8c688acf4462990fa511d702d2dec", async() => {
                 BeginContext(305, 142, true);
                 WriteLiteral("\r\n                    <h5 class=\"card-title\">Adicionar Categoria</h5>\r\n                    <i class=\"fas fa-edit fa-5x\"></i>\r\n                ");
                 EndContext();
@@ -88,7 +88,7 @@ using ControleDeGastos.Models;
             WriteLiteral("\r\n            </div>\r\n        </div>\r\n        <div class=\"card p-3\">\r\n            ");
             EndContext();
             BeginContext(533, 188, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "efef513dafcd4a4e989e18f5fd122a04", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "102f9764d834449fbc69b85647a7e788", async() => {
                 BeginContext(584, 133, true);
                 WriteLiteral("\r\n                <h5 class=\"card-title\">Adicionar Orçamento</h5>\r\n                <i class=\"fas fa-list-ol fa-5x\"></i>\r\n            ");
                 EndContext();
@@ -112,7 +112,7 @@ using ControleDeGastos.Models;
             WriteLiteral("\r\n        </div>\r\n        <div class=\"card p-3\">\r\n            ");
             EndContext();
             BeginContext(783, 184, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a942703fb0fd483ebe834d06d2b94e0c", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "08a2a5805473402ea14b2b08f9cbe569", async() => {
                 BeginContext(830, 133, true);
                 WriteLiteral("\r\n                <h5 class=\"card-title\">Adicionar Conta</h5>\r\n                <i class=\"fas fa-credit-card fa-5x\"></i>\r\n            ");
                 EndContext();
@@ -136,7 +136,7 @@ using ControleDeGastos.Models;
             WriteLiteral("\r\n        </div>\r\n        <div class=\"card p-3\">\r\n            ");
             EndContext();
             BeginContext(1029, 192, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "b4fc424200394cae904a07b668307f0a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2282bc4621874f9692ffc5c8afcbfe8a", async() => {
                 BeginContext(1076, 141, true);
                 WriteLiteral("\r\n                <h5 class=\"card-title\">Adicionar Gasto</h5>\r\n                <i class=\"fas fa-file-invoice-dollar fa-5x\"></i>\r\n            ");
                 EndContext();

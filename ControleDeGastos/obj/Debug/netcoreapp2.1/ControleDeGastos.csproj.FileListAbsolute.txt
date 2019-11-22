@@ -65,3 +65,4 @@ C:\Users\GABRIELA\Desktop\ControleDeGastos\ControleDeGastos\obj\Debug\netcoreapp
 C:\Users\GABRIELA\Desktop\ControleDeGastos\ControleDeGastos\obj\Debug\netcoreapp2.1\Razor\Views\Relatorios\GastoCategoria.g.cshtml.cs
 C:\Users\GABRIELA\Desktop\ControleDeGastos\ControleDeGastos\obj\Debug\netcoreapp2.1\Razor\Views\Relatorios\GastoConta.g.cshtml.cs
 C:\Users\GABRIELA\Desktop\ControleDeGastos\ControleDeGastos\obj\Debug\netcoreapp2.1\Razor\Views\Relatorios\GastoPeriodo.g.cshtml.cs
+C:\Users\GABRIELA\Desktop\ControleDeGastos\ControleDeGastos\obj\Debug\netcoreapp2.1\Razor\Views\Relatorios\TotalOrcamento2.g.cshtml.cs

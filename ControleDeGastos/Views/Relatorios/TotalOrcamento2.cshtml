@@ -1,0 +1,34 @@
+﻿@model ControleDeGastos.Models.Orcamento
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Meses = new SelectList(new object[]
+{
+new {Mes = "Janeiro", Value = "1"},
+new {Mes = "Fevereiro", Value = "2"},
+new {Mes = "Março", Value = "3"},
+new {Mes = "Abril", Value = "4"},
+new {Mes = "Maio", Value = "5"},
+new {Mes = "Junho", Value = "6"},
+new {Mes = "Julho", Value = "7"},
+new {Mes = "Agosto", Value = "8"},
+new {Mes = "Setembro", Value = "9"},
+new {Mes = "Outubro", Value = "10"},
+new {Mes = "Novembro", Value = "11"},
+new {Mes = "Dezembro", Value = "12"}
+}, "Value", "Mes");
+}
+<h2>Total Gasto no mês</h2>
+<hr />
+<div>
+
+    <!--<h4>@ViewBag.Meses</h4><br /> -->  
+    <h4>Novembro</h4><br />
+    <h4>@ViewBag.Total</h4><br />
+
+
+</div>
+

@@ -25,5 +25,8 @@ namespace ControleDeGastos.Models
 
         [ForeignKey("CategoriaID")]
         public Categoria Categoria { get; set; }
+
+        [ForeignKey("ContaID")]
+        public Conta Conta { get; set; }
     }
 }
