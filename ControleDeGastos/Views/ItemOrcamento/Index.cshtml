@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ControleDeGastos.Models.Orcamento>
+﻿@model IEnumerable<ControleDeGastos.Models.ItemOrcamento>
 
 @{
     ViewData["Title"] = "Index";
@@ -14,9 +14,6 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Ano)
-            </th>
-            <th>
                 @Html.DisplayNameFor(model => model.Descricao)
             </th>
             <th>
@@ -28,9 +25,6 @@
     <tbody>
 @foreach (var item in Model) {
         <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Ano)
-            </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Descricao)
             </td>

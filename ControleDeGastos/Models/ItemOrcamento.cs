@@ -14,9 +14,10 @@ namespace ControleDeGastos.Models
         public int ID { get; set; }
         
         [ForeignKey("CategoriaID")]
-        public Categoria Categoria { get; set; }
+        public int Categoria { get; set; }
         public string Descricao { get; set; }
         public double Valor { get; set; }
-
+        [ForeignKey("Orcamento")]
+        public Orcamento Orcamentos { get; set; }
     }
 }

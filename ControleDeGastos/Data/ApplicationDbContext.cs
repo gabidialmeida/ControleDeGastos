@@ -19,5 +19,6 @@ namespace ControleDeGastos.Data
         public DbSet<ControleDeGastos.Models.Conta> Conta { get; set; }
         public DbSet<ControleDeGastos.Models.Orcamento> Orcamento { get; set; }
         public DbSet<ControleDeGastos.Models.Mes> Mes { get; set; }
+        public DbSet<ControleDeGastos.Models.ItemOrcamento> ItemOrcamento { get; set; }
     }
 }

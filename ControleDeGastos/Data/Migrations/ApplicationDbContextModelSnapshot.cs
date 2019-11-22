@@ -72,6 +72,27 @@ namespace ControleDeGastos.Data.Migrations
                     b.ToTable("Gastos");
                 });
 
+            modelBuilder.Entity("ControleDeGastos.Models.ItemOrcamento", b =>
+                {
+                    b.Property<int>("ID")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
+                    b.Property<int>("Categoria");
+
+                    b.Property<string>("Descricao");
+
+                    b.Property<int?>("Orcamento");
+
+                    b.Property<double>("Valor");
+
+                    b.HasKey("ID");
+
+                    b.HasIndex("Orcamento");
+
+                    b.ToTable("ItemOrcamento");
+                });
+
             modelBuilder.Entity("ControleDeGastos.Models.Mes", b =>
                 {
                     b.Property<int>("Id")
@@ -93,21 +114,15 @@ namespace ControleDeGastos.Data.Migrations
 
                     b.Property<int>("Ano");
 
-                    b.Property<int?>("CategoriaID");
-
                     b.Property<string>("Descricao");
 
                     b.Property<int?>("MesID");
 
-                    b.Property<double>("Valor");
-
                     b.HasKey("ID");
-
-                    b.HasIndex("CategoriaID");
 
                     b.HasIndex("MesID");
 
-                    b.ToTable("Orcamentos");
+                    b.ToTable("Orcamento");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -286,12 +301,15 @@ namespace ControleDeGastos.Data.Migrations
                         .HasForeignKey("MesID");
                 });
 
+            modelBuilder.Entity("ControleDeGastos.Models.ItemOrcamento", b =>
+                {
+                    b.HasOne("ControleDeGastos.Models.Orcamento", "Orcamentos")
+                        .WithMany()
+                        .HasForeignKey("Orcamento");
+                });
+
             modelBuilder.Entity("ControleDeGastos.Models.Orcamento", b =>
                 {
-                    b.HasOne("ControleDeGastos.Models.Categoria", "Categoria")
-                        .WithMany()
-                        .HasForeignKey("CategoriaID");
-
                     b.HasOne("ControleDeGastos.Models.Mes", "Mes")
                         .WithMany()
                         .HasForeignKey("MesID");

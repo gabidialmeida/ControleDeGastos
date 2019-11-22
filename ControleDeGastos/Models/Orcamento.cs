@@ -15,8 +15,5 @@ namespace ControleDeGastos.Models
         public Mes Mes { get; set; }
         public int Ano { get; set; }
         public string Descricao { get; set; }
-
-        public ICollection<ItemOrcamento> Item { get; set; }
-
     }
 }
